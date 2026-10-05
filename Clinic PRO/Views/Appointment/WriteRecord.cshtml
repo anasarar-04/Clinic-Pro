@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "كتابة السجل الطبي";
+    var appointmentId = ViewBag.AppointmentId;
+    var patientId = ViewBag.PatientId;
+    var doctorId = ViewBag.DoctorId;
+    var patientName = ViewBag.PatientName;
+}
+
+<h3 class="mb-4">كتابة سجل طبي - المريض: @patientName</h3>
+
+<form asp-action="WriteRecord" method="post" id="recordForm">
+    <input type="hidden" name="AppointmentId" value="@appointmentId" />
+    <input type="hidden" name="PatientId" value="@patientId" />
+    <input type="hidden" name="DoctorId" value="@doctorId" />
+
+    <div class="mb-3">
+        <label class="form-label">التشخيص</label>
+        <input type="text" name="Diagnosis" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">التقرير الطبي</label>
+        <textarea name="Report" class="form-control" rows="4"></textarea>
+    </div>
+
+    <hr />
+    <h5>الوصفة الطبية</h5>
+    <div id="itemsContainer"></div>
+
+    <button type="button" id="addItemBtn" class="btn btn-outline-primary btn-sm mb-3">+ إضافة دواء</button>
+
+    <hr />
+    <button type="submit" class="btn btn-success w-100">حفظ السجل والوصفة</button>
+</form>
+
+@section Scripts {
+    <script>
+        let itemIndex = 0;
+
+        document.getElementById('addItemBtn').addEventListener('click', addItem);
+
+        function addItem() {
+            const container = document.getElementById('itemsContainer');
+            const idx = itemIndex++;
+
+            const div = document.createElement('div');
+            div.className = 'card mb-2 p-3';
+            div.innerHTML = `
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-4 position-relative">
+                        <label class="form-label">اسم الدواء</label>
+                        <input type="text" class="form-control medicine-search" autocomplete="off" placeholder="اكتب اسم الدواء..." />
+                        <input type="hidden" name="Items[${idx}].MedicineId" class="medicine-id" />
+                        <div class="list-group medicine-suggestions position-absolute w-100" style="z-index:1000;"></div>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">الجرعة</label>
+                        <input type="text" name="Items[${idx}].Dosage" class="form-control" placeholder="مثلا: 500mg" />
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">عدد الأيام</label>
+                        <input type="number" name="Items[${idx}].DurationDays" class="form-control" min="1" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">تعليمات</label>
+                        <input type="text" name="Items[${idx}].Instructions" class="form-control" placeholder="بعد الأكل..." />
+                    </div>
+                    <div class="col-md-1">
+                        <button type="button" class="btn btn-danger btn-sm remove-item">حذف</button>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <label class="form-label">أوقات التذكير</label>
+                    <div class="reminder-times d-flex gap-2 flex-wrap"></div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm add-time mt-1">+ إضافة وقت</button>
+                </div>
+            `;
+
+            container.appendChild(div);
+
+            // زر حذف الدواء بالكامل
+            div.querySelector('.remove-item').addEventListener('click', () => div.remove());
+
+            // إضافة وقت تذكير
+            const timesContainer = div.querySelector('.reminder-times');
+            div.querySelector('.add-time').addEventListener('click', () => {
+                const timeIdx = timesContainer.children.length;
+                const wrapper = document.createElement('div');
+                wrapper.className = 'd-flex align-items-center gap-1';
+                wrapper.innerHTML = `
+                    <input type="time" name="Items[${idx}].ReminderTimes[${timeIdx}]" class="form-control form-control-sm" style="width:120px" />
+                    <button type="button" class="btn btn-sm btn-outline-danger remove-time">×</button>
+                `;
+                wrapper.querySelector('.remove-time').addEventListener('click', () => wrapper.remove());
+                timesContainer.appendChild(wrapper);
+            });
+
+            // البحث بالأدوية (autocomplete)
+            const searchInput = div.querySelector('.medicine-search');
+            const hiddenId = div.querySelector('.medicine-id');
+            const suggestionsBox = div.querySelector('.medicine-suggestions');
+            let debounceTimer;
+
+            searchInput.addEventListener('input', function () {
+                clearTimeout(debounceTimer);
+                const term = this.value.trim();
+                hiddenId.value = '';
+
+                if (term.length < 2) {
+                    suggestionsBox.innerHTML = '';
+                    return;
+                }
+
+                debounceTimer = setTimeout(() => {
+                    fetch(`/Appointment/SearchMedicines?term=${encodeURIComponent(term)}`)
+                        .then(res => res.json())
+                        .then(data => {
+                            suggestionsBox.innerHTML = '';
+                            data.forEach(med => {
+                                const option = document.createElement('button');
+                                option.type = 'button';
+                                option.className = 'list-group-item list-group-item-action';
+                                option.textContent = med.name;
+                                option.addEventListener('click', () => {
+                                    searchInput.value = med.name;
+                                    hiddenId.value = med.medicineId;
+                                    suggestionsBox.innerHTML = '';
+                                });
+                                suggestionsBox.appendChild(option);
+                            });
+                        });
+                }, 300);
+            });
+
+            // إخفاء القائمة لو ضغط المستخدم بره الصندوق
+            document.addEventListener('click', function (e) {
+                if (!div.contains(e.target)) {
+                    suggestionsBox.innerHTML = '';
+                }
+            });
+        }
+
+        // أضف أول عنصر تلقائيا عند فتح الصفحة
+        addItem();
+    </script>
+}

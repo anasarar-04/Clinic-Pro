@@ -1,0 +1,37 @@
+﻿@model List<ClinicPRO.Application.DTOs.DoctorListDto>
+
+@{
+    ViewData["Title"] = "اختر الدكتور";
+}
+
+<h3 class="mb-4">اختر الدكتور المناسب</h3>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+@if (!Model.Any())
+{
+    <p class="text-muted">لا يوجد دكاترة مسجلين حاليا.</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var doctor in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">د. @doctor.FullName</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@doctor.SpecializationName</h6>
+                        <p class="card-text">@doctor.Bio</p>
+                        <a asp-action="ChooseSlot" asp-route-doctorId="@doctor.DoctorId" class="btn btn-primary w-100">
+                            اختر موعد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

@@ -1,0 +1,51 @@
+﻿@model ClinicPRO.Application.DTOs.PrescriptionViewDto
+
+@{
+    ViewData["Title"] = "تفاصيل الزيارة";
+}
+
+<h3 class="mb-4">تفاصيل الزيارة</h3>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <p><strong>الدكتور:</strong> د. @Model.DoctorName (@Model.SpecializationName)</p>
+        <p><strong>تاريخ الزيارة:</strong> @Model.VisitDate.ToString("yyyy-MM-dd")</p>
+        <p><strong>التشخيص:</strong> @(Model.Diagnosis ?? "-")</p>
+        <p><strong>التقرير:</strong> @(Model.Report ?? "-")</p>
+    </div>
+</div>
+
+<h5 class="mb-3">الوصفة الطبية</h5>
+
+@if (!Model.Items.Any())
+{
+    <p class="text-muted">لم يتم وصف أي أدوية بهذه الزيارة.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>الدواء</th>
+                <th>الجرعة</th>
+                <th>عدد الأيام</th>
+                <th>التعليمات</th>
+                <th>أوقات التذكير</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td>@item.MedicineName</td>
+                    <td>@(item.Dosage ?? "-")</td>
+                    <td>@item.DurationDays</td>
+                    <td>@(item.Instructions ?? "-")</td>
+                    <td>@string.Join(" - ", item.ReminderTimes)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a asp-action="MyAppointments" class="btn btn-link mt-2">&larr; رجوع لمواعيدي</a>

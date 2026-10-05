@@ -1,0 +1,64 @@
+﻿@model List<ClinicPRO.Application.DTOs.PatientAppointmentDto>
+
+@{
+    ViewData["Title"] = "مواعيدي";
+}
+
+<h3 class="mb-4">مواعيدي</h3>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+@if (!Model.Any())
+{
+    <p class="text-muted">لا يوجد لديك أي مواعيد محجوزة حاليا.</p>
+    <a asp-action="ChooseDoctor" class="btn btn-primary">احجز موعد الآن</a>
+}
+else
+{
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>الدكتور</th>
+                <th>التخصص</th>
+                <th>التاريخ</th>
+                <th>الوقت</th>
+                <th>الحالة</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var appt in Model)
+            {
+                <tr>
+                    <td>د. @appt.DoctorName</td>
+                    <td>@appt.SpecializationName</td>
+                    <td>@(appt.SlotDate?.ToString("yyyy-MM-dd") ?? "-")</td>
+                    <td>@(appt.StartTime?.ToString(@"hh\:mm") ?? "-")</td>
+                    <td>
+                        @{
+                            var statusClass = appt.Status switch
+                            {
+                                ClinicPRO.Domain.Enums.AppointmentStatus.Confirmed => "badge bg-success",
+                                ClinicPRO.Domain.Enums.AppointmentStatus.Completed => "badge bg-secondary",
+                                ClinicPRO.Domain.Enums.AppointmentStatus.Cancelled => "badge bg-danger",
+                                _ => "badge bg-warning text-dark"
+                            };
+                        }
+                        <span class="@statusClass">@appt.Status</span>
+                    </td>
+                    <td>
+                        @if (appt.Status == ClinicPRO.Domain.Enums.AppointmentStatus.Completed)
+                        {
+                            <a asp-action="ViewPrescription" asp-route-appointmentId="@appt.AppointmentId" class="btn btn-sm btn-outline-primary">
+                                عرض التفاصيل
+                            </a>
+                        }
+                    </td>
+                    <th></th>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
