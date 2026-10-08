@@ -8,6 +8,8 @@ namespace ClinicPRO.Application.Interfaces.Repositories
         Task<List<Appointment>> GetByPatientIdAsync(int patientId);
         Task<List<Appointment>> GetByDoctorIdAsync(int doctorId);
         Task<List<Appointment>> GetUpcomingByPatientIdAsync(int patientId, DateTime fromDate);
+        Task<List<Appointment>> GetBySlotDateAsync(DateTime date);
+        Task<Appointment?> GetBySlotIdAsync(int slotId);
         Task AddAsync(Appointment appointment);
         void Update(Appointment appointment);
         void Delete(Appointment appointment);

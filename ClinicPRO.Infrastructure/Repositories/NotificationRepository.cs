@@ -38,5 +38,19 @@ namespace ClinicPRO.Infrastructure.Repositories
         {
             _context.Notifications.Update(notification);
         }
+        public async Task<bool> ExistsAppointmentReminderAsync(int appointmentId)
+        {
+            return await _context.Notifications.AnyAsync(n =>
+                n.AppointmentId == appointmentId &&
+                n.NotifType == ClinicPRO.Domain.Enums.NotificationType.AppointmentReminder);
+        }
+
+        public async Task<bool> ExistsMedicationReminderForTodayAsync(int itemId, DateTime date)
+        {
+            return await _context.Notifications.AnyAsync(n =>
+                n.ItemId == itemId &&
+                n.NotifType == ClinicPRO.Domain.Enums.NotificationType.MedicationReminder &&
+                n.ScheduledAt.Date == date.Date);
+        }
     }
 }

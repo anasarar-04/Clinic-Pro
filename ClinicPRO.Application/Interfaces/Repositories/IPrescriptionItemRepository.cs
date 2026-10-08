@@ -6,6 +6,7 @@ namespace ClinicPRO.Application.Interfaces.Repositories
     {
         Task<PrescriptionItem?> GetByIdAsync(int itemId);
         Task<List<PrescriptionItem>> GetByPrescriptionIdAsync(int prescriptionId);
+        Task<List<PrescriptionItem>> GetActiveItemsAsync(DateTime today);
         Task AddAsync(PrescriptionItem item);
         void Update(PrescriptionItem item);
         void Delete(PrescriptionItem item);

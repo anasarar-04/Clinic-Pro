@@ -9,3 +9,4 @@ C:\Users\ASUS\source\repos\Clinic PRO\ClinicPRO.Domain\obj\Debug\net8.0\ClinicPR
 C:\Users\ASUS\source\repos\Clinic PRO\ClinicPRO.Domain\obj\Debug\net8.0\refint\ClinicPRO.Domain.dll
 C:\Users\ASUS\source\repos\Clinic PRO\ClinicPRO.Domain\obj\Debug\net8.0\ClinicPRO.Domain.pdb
 C:\Users\ASUS\source\repos\Clinic PRO\ClinicPRO.Domain\obj\Debug\net8.0\ref\ClinicPRO.Domain.dll
+C:\Users\ASUS\source\repos\Clinic PRO\ClinicPRO.Domain\obj\Debug\net8.0\ClinicPRO.Domain.sourcelink.json

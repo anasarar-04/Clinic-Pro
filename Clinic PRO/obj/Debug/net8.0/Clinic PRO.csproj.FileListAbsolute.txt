@@ -152,3 +152,6 @@ C:\Users\ASUS\source\repos\Clinic PRO\Clinic PRO\bin\Debug\net8.0\ClinicPRO.Appl
 C:\Users\ASUS\source\repos\Clinic PRO\Clinic PRO\bin\Debug\net8.0\ClinicPRO.Domain.pdb
 C:\Users\ASUS\source\repos\Clinic PRO\Clinic PRO\bin\Debug\net8.0\ClinicPRO.Infrastructure.pdb
 C:\Users\ASUS\source\repos\Clinic PRO\Clinic PRO\bin\Debug\net8.0\BCrypt-Net-Next.dll
+C:\Users\ASUS\source\repos\Clinic PRO\Clinic PRO\obj\Debug\net8.0\Clinic PRO.sourcelink.json
+C:\Users\ASUS\source\repos\Clinic PRO\Clinic PRO\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\ASUS\source\repos\Clinic PRO\Clinic PRO\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll

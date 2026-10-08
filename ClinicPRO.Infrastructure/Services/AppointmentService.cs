@@ -66,6 +66,18 @@ namespace ClinicPRO.Infrastructure.Services
             if (slot.IsBooked)
                 return (false, "عذرا، هذا الموعد تم حجزه للتو من مريض آخر");
 
+            // افصل أي موعد ملغى قديم ما زال مربوط بنفس الوقت
+            var oldLinked = await _unitOfWork.Appointments.GetBySlotIdAsync(dto.SlotId);
+            if (oldLinked != null)
+            {
+                if (oldLinked.Status != Domain.Enums.AppointmentStatus.Cancelled)
+                    return (false, "عذرا، هذا الوقت غير متاح");
+
+                oldLinked.SlotId = null;
+                _unitOfWork.Appointments.Update(oldLinked);
+                await _unitOfWork.SaveChangesAsync();
+            }
+
             // 2. أنشئ الموعد
             var appointment = new Appointment
             {
@@ -117,6 +129,103 @@ namespace ClinicPRO.Infrastructure.Services
                     StartTime = a.Slot?.StartTime,
                     Status = a.Status
                 }).ToList();
+        }
+        public async Task<(bool Success, string Message)> AddSlotAsync(AddSlotDto dto)
+        {
+            if (dto.StartTime >= dto.EndTime)
+                return (false, "وقت البداية يجب أن يكون قبل وقت النهاية");
+
+            var slot = new AvailableSlot
+            {
+                DoctorId = dto.DoctorId,
+                SlotDate = dto.SlotDate,
+                StartTime = dto.StartTime,
+                EndTime = dto.EndTime,
+                IsBooked = false
+            };
+
+            await _unitOfWork.AvailableSlots.AddAsync(slot);
+            await _unitOfWork.SaveChangesAsync();
+
+            return (true, "تم إضافة الموعد بنجاح");
+        }
+
+        public async Task<List<DoctorSlotDto>> GetDoctorSlotsAsync(int doctorId)
+        {
+            var slots = await _unitOfWork.AvailableSlots.GetAllByDoctorIdAsync(doctorId);
+
+            return slots.Select(s => new DoctorSlotDto
+            {
+                SlotId = s.SlotId,
+                SlotDate = s.SlotDate,
+                StartTime = s.StartTime,
+                EndTime = s.EndTime,
+                IsBooked = s.IsBooked
+            }).ToList();
+        }
+        public async Task<(bool Success, string Message)> CancelAppointmentAsync(int appointmentId, int patientId)
+        {
+            var appointment = await _unitOfWork.Appointments.GetByIdAsync(appointmentId);
+
+            if (appointment == null)
+                return (false, "الموعد غير موجود");
+
+            if (appointment.PatientId != patientId)
+                return (false, "لا يمكنك إلغاء موعد لا يخصك");
+
+            if (appointment.Status == Domain.Enums.AppointmentStatus.Completed)
+                return (false, "لا يمكن إلغاء موعد مكتمل بالفعل");
+
+            if (appointment.Status == Domain.Enums.AppointmentStatus.Cancelled)
+                return (false, "هذا الموعد ملغى بالفعل");
+
+            // حرر الوقت حتى يصير متاح لمريض آخر
+            if (appointment.Slot != null)
+            {
+                appointment.Slot.IsBooked = false;
+                _unitOfWork.AvailableSlots.Update(appointment.Slot);
+            }
+
+            // افصل الموعد الملغى عن الوقت
+            appointment.Status = Domain.Enums.AppointmentStatus.Cancelled;
+            appointment.SlotId = null;
+            appointment.Slot = null;
+            _unitOfWork.Appointments.Update(appointment);
+
+            await _unitOfWork.SaveChangesAsync();
+
+            return (true, "تم إلغاء الموعد بنجاح");
+        }
+
+        public async Task<(bool Success, string Message)> DeleteSlotAsync(int slotId, int doctorId)
+        {
+            var slot = await _unitOfWork.AvailableSlots.GetByIdAsync(slotId);
+
+            if (slot == null)
+                return (false, "الموعد غير موجود");
+
+            if (slot.DoctorId != doctorId)
+                return (false, "لا يمكنك حذف موعد لا يخصك");
+
+            if (slot.IsBooked)
+                return (false, "لا يمكن حذف موعد محجوز، يجب إلغاء الحجز أولا");
+
+            // نظّف أي موعد ملغى قديم ما زال مربوط بهاد الوقت
+            var linked = await _unitOfWork.Appointments.GetBySlotIdAsync(slotId);
+            if (linked != null)
+            {
+                if (linked.Status != Domain.Enums.AppointmentStatus.Cancelled)
+                    return (false, "هذا الوقت مرتبط بموعد فعّال");
+
+                linked.SlotId = null;
+                _unitOfWork.Appointments.Update(linked);
+                await _unitOfWork.SaveChangesAsync();
+            }
+
+            _unitOfWork.AvailableSlots.Delete(slot);
+            await _unitOfWork.SaveChangesAsync();
+
+            return (true, "تم حذف الموعد بنجاح");
         }
     }
 

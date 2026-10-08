@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Clinic PRO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6fbb0a7d8525fe5df8e2b709e17381a8a0c4835")]
 [assembly: System.Reflection.AssemblyProductAttribute("Clinic PRO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Clinic PRO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

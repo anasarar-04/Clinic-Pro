@@ -69,5 +69,21 @@ namespace ClinicPRO.Infrastructure.Repositories
         {
             _context.Appointments.Remove(appointment);
         }
+        public async Task<List<Appointment>> GetBySlotDateAsync(DateTime date)
+        {
+            return await _context.Appointments
+                .Include(a => a.Patient)
+                    .ThenInclude(p => p.Account)
+                .Include(a => a.Slot)
+                .Where(a => a.Slot != null
+                         && a.Slot.SlotDate.Date == date.Date
+                         && a.Status != ClinicPRO.Domain.Enums.AppointmentStatus.Cancelled)
+                .ToListAsync();
+        }
+        public async Task<Appointment?> GetBySlotIdAsync(int slotId)
+        {
+            return await _context.Appointments
+                .FirstOrDefaultAsync(a => a.SlotId == slotId);
+        }
     }
 }

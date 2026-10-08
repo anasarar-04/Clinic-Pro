@@ -173,6 +173,67 @@ namespace Clinic_PRO.Controllers
 
             return View(details);
         }
+        [HttpGet]
+        public async Task<IActionResult> MySlots()
+        {
+            var accountId = HttpContext.Session.GetInt32("AccountId");
+            if (accountId == null)
+                return RedirectToAction("Login", "Account");
+
+            var doctor = await _doctorRepository.GetByAccountIdAsync(accountId.Value);
+            if (doctor == null)
+                return RedirectToAction("Login", "Account");
+
+            ViewBag.DoctorId = doctor.DoctorId;
+            var slots = await _appointmentService.GetDoctorSlotsAsync(doctor.DoctorId);
+            return View(slots);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddSlot(AddSlotDto dto)
+        {
+            var accountId = HttpContext.Session.GetInt32("AccountId");
+            if (accountId == null)
+                return RedirectToAction("Login", "Account");
+
+            var result = await _appointmentService.AddSlotAsync(dto);
+            TempData[result.Success ? "SuccessMessage" : "ErrorMessage"] = result.Message;
+
+            return RedirectToAction("MySlots");
+        }
+        [HttpPost]
+        public async Task<IActionResult> CancelAppointment(int appointmentId)
+        {
+            var accountId = HttpContext.Session.GetInt32("AccountId");
+            if (accountId == null)
+                return RedirectToAction("Login", "Account");
+
+            var patient = await _patientRepository.GetByAccountIdAsync(accountId.Value);
+            if (patient == null)
+                return RedirectToAction("Login", "Account");
+
+            var result = await _appointmentService.CancelAppointmentAsync(appointmentId, patient.PatientId);
+            TempData[result.Success ? "SuccessMessage" : "ErrorMessage"] = result.Message;
+
+            return RedirectToAction("MyAppointments");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteSlot(int slotId)
+        {
+            var accountId = HttpContext.Session.GetInt32("AccountId");
+            if (accountId == null)
+                return RedirectToAction("Login", "Account");
+
+            var doctor = await _doctorRepository.GetByAccountIdAsync(accountId.Value);
+            if (doctor == null)
+                return RedirectToAction("Login", "Account");
+
+            var result = await _appointmentService.DeleteSlotAsync(slotId, doctor.DoctorId);
+            TempData[result.Success ? "SuccessMessage" : "ErrorMessage"] = result.Message;
+
+            return RedirectToAction("MySlots");
+        }
 
     }
 }

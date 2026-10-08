@@ -40,5 +40,13 @@ namespace ClinicPRO.Infrastructure.Repositories
         {
             _context.AvailableSlots.Remove(slot);
         }
+        public async Task<List<AvailableSlot>> GetAllByDoctorIdAsync(int doctorId)
+        {
+            return await _context.AvailableSlots
+                .Where(s => s.DoctorId == doctorId)
+                .OrderBy(s => s.SlotDate)
+                .ThenBy(s => s.StartTime)
+                .ToListAsync();
+        }
     }
 }

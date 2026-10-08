@@ -3,16 +3,100 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.infrastructure\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|solutionrelative:clinicpro.infrastructure\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.infrastructure\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|solutionrelative:clinicpro.infrastructure\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.infrastructure\\repositories\\availableslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|solutionrelative:clinicpro.infrastructure\\repositories\\availableslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\interfaces\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\interfaces\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\views\\appointment\\myslots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\views\\appointment\\myslots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\views\\appointment\\myappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\views\\appointment\\myappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\views\\appointment\\viewprescription.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\views\\appointment\\viewprescription.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\interfaces\\repositories\\iavailableslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\interfaces\\repositories\\iavailableslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\dtos\\doctorslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\dtos\\doctorslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\dtos\\addslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\dtos\\addslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\views\\notification\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\views\\notification\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.infrastructure\\services\\notificationbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|solutionrelative:clinicpro.infrastructure\\services\\notificationbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.infrastructure\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|solutionrelative:clinicpro.infrastructure\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.infrastructure\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|solutionrelative:clinicpro.infrastructure\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.infrastructure\\repositories\\prescriptionitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|solutionrelative:clinicpro.infrastructure\\repositories\\prescriptionitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\interfaces\\repositories\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\interfaces\\repositories\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\interfaces\\repositories\\iprescriptionitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\interfaces\\repositories\\iprescriptionitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\dtos\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\dtos\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\views\\appointment\\viewprescription.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\views\\appointment\\viewprescription.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\interfaces\\imedicalrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,20 +119,12 @@
       "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\dtos\\prescriptionviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.infrastructure\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|solutionrelative:clinicpro.infrastructure\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\views\\appointment\\writerecord.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\views\\appointment\\writerecord.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\views\\appointment\\doctorappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\views\\appointment\\doctorappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\dtos\\writemedicalrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,20 +143,8 @@
       "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\dtos\\bookappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinic pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA79438A-9D23-4795-9017-9374EB303DB9}|Clinic PRO\\Clinic PRO.csproj|solutionrelative:clinic pro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.infrastructure\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6396F78D-52BB-4CAC-9886-624455E87A89}|ClinicPRO.Infrastructure\\ClinicPRO.Infrastructure.csproj|solutionrelative:clinicpro.infrastructure\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\dtos\\doctorappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\dtos\\doctorappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|solutionrelative:clinicpro.application\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D319BE2B-2C54-4F3C-8A00-59CA569A1685}|ClinicPRO.Application\\ClinicPRO.Application.csproj|c:\\users\\asus\\source\\repos\\clinic pro\\clinicpro.application\\dtos\\patientappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -154,7 +218,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -201,8 +265,296 @@
               "Name": "ST:31:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AvailableSlotRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\AvailableSlotRepository.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Repositories\\AvailableSlotRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\AvailableSlotRepository.cs",
+              "RelativeToolTip": "ClinicPRO.Infrastructure\\Repositories\\AvailableSlotRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T20:43:10.39Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Repositories\\AppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\AppointmentRepository.cs",
+              "RelativeToolTip": "ClinicPRO.Infrastructure\\Repositories\\AppointmentRepository.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAADwv1gAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T20:36:08.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Services\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "ClinicPRO.Infrastructure\\Services\\AppointmentService.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAmwFIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T16:53:39.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\Repositories\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\Repositories\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\Repositories\\IAppointmentRepository.cs",
+              "RelativeToolTip": "ClinicPRO.Application\\Interfaces\\Repositories\\IAppointmentRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:53:09.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\IAppointmentService.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\IAppointmentService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\IAppointmentService.cs",
+              "RelativeToolTip": "ClinicPRO.Application\\Interfaces\\IAppointmentService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T16:51:27.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MySlots.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\MySlots.cshtml",
+              "RelativeDocumentMoniker": "Clinic PRO\\Views\\Appointment\\MySlots.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\MySlots.cshtml",
+              "RelativeToolTip": "Clinic PRO\\Views\\Appointment\\MySlots.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv0gAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-05T20:45:00.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MyAppointments.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\MyAppointments.cshtml",
+              "RelativeDocumentMoniker": "Clinic PRO\\Views\\Appointment\\MyAppointments.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\MyAppointments.cshtml",
+              "RelativeToolTip": "Clinic PRO\\Views\\Appointment\\MyAppointments.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwEMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-26T20:38:28.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Clinic PRO\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Clinic PRO\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAgwOsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T19:30:30.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Clinic PRO\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Clinic PRO\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-22T16:47:24.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAvailableSlotRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\Repositories\\IAvailableSlotRepository.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\Repositories\\IAvailableSlotRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\Repositories\\IAvailableSlotRepository.cs",
+              "RelativeToolTip": "ClinicPRO.Application\\Interfaces\\Repositories\\IAvailableSlotRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T20:42:43.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DoctorSlotDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\DoctorSlotDto.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\DoctorSlotDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\DoctorSlotDto.cs",
+              "RelativeToolTip": "ClinicPRO.Application\\DTOs\\DoctorSlotDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T20:42:23.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddSlotDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\AddSlotDto.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\AddSlotDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\AddSlotDto.cs",
+              "RelativeToolTip": "ClinicPRO.Application\\DTOs\\AddSlotDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T20:42:05.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Notification\\Index.cshtml",
+              "RelativeDocumentMoniker": "Clinic PRO\\Views\\Notification\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Notification\\Index.cshtml",
+              "RelativeToolTip": "Clinic PRO\\Views\\Notification\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-05T20:06:03.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "Clinic PRO\\Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "Clinic PRO\\Controllers\\NotificationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T20:03:46.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Program.cs",
+              "RelativeDocumentMoniker": "Clinic PRO\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Program.cs",
+              "RelativeToolTip": "Clinic PRO\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T19:02:00.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NotificationBackgroundService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\NotificationBackgroundService.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Services\\NotificationBackgroundService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\NotificationBackgroundService.cs",
+              "RelativeToolTip": "ClinicPRO.Infrastructure\\Services\\NotificationBackgroundService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T20:00:09.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\NotificationService.cs",
+              "RelativeToolTip": "ClinicPRO.Infrastructure\\Services\\NotificationService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwFwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:59:36.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NotificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\NotificationRepository.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Repositories\\NotificationRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\NotificationRepository.cs",
+              "RelativeToolTip": "ClinicPRO.Infrastructure\\Repositories\\NotificationRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:57:50.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PrescriptionItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\PrescriptionItemRepository.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Repositories\\PrescriptionItemRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\PrescriptionItemRepository.cs",
+              "RelativeToolTip": "ClinicPRO.Infrastructure\\Repositories\\PrescriptionItemRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwDMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:57:29.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\INotificationService.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\INotificationService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\INotificationService.cs",
+              "RelativeToolTip": "ClinicPRO.Application\\Interfaces\\INotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:54:47.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "INotificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\Repositories\\INotificationRepository.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\Repositories\\INotificationRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\Repositories\\INotificationRepository.cs",
+              "RelativeToolTip": "ClinicPRO.Application\\Interfaces\\Repositories\\INotificationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:54:11.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IPrescriptionItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\Repositories\\IPrescriptionItemRepository.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\Repositories\\IPrescriptionItemRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\Repositories\\IPrescriptionItemRepository.cs",
+              "RelativeToolTip": "ClinicPRO.Application\\Interfaces\\Repositories\\IPrescriptionItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:53:43.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NotificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\NotificationDto.cs",
+              "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\NotificationDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\NotificationDto.cs",
+              "RelativeToolTip": "ClinicPRO.Application\\DTOs\\NotificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:52:49.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ViewPrescription.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\ViewPrescription.cshtml",
               "RelativeDocumentMoniker": "Clinic PRO\\Views\\Appointment\\ViewPrescription.cshtml",
@@ -214,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 24,
               "Title": "IMedicalRecordService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\IMedicalRecordService.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\IMedicalRecordService.cs",
@@ -226,20 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MyAppointments.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\MyAppointments.cshtml",
-              "RelativeDocumentMoniker": "Clinic PRO\\Views\\Appointment\\MyAppointments.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\MyAppointments.cshtml",
-              "RelativeToolTip": "Clinic PRO\\Views\\Appointment\\MyAppointments.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-26T20:38:28.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 25,
               "Title": "MedicalRecordService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\MedicalRecordService.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Services\\MedicalRecordService.cs",
@@ -251,19 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "Clinic PRO\\Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "Clinic PRO\\Controllers\\AppointmentController.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAYwJ4AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T19:30:30.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 26,
               "Title": "MedicalRecordRepository.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\MedicalRecordRepository.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Repositories\\MedicalRecordRepository.cs",
@@ -275,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 27,
               "Title": "IMedicalRecordRepository.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\Repositories\\IMedicalRecordRepository.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\Repositories\\IMedicalRecordRepository.cs",
@@ -287,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 28,
               "Title": "PrescriptionViewDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\PrescriptionViewDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\PrescriptionViewDto.cs",
@@ -299,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 30,
               "Title": "DoctorAppointments.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\DoctorAppointments.cshtml",
               "RelativeDocumentMoniker": "Clinic PRO\\Views\\Appointment\\DoctorAppointments.cshtml",
@@ -311,19 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppointmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\AppointmentRepository.cs",
-              "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Repositories\\AppointmentRepository.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\AppointmentRepository.cs",
-              "RelativeToolTip": "ClinicPRO.Infrastructure\\Repositories\\AppointmentRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T20:36:08.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 29,
               "Title": "WriteRecord.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\WriteRecord.cshtml",
               "RelativeDocumentMoniker": "Clinic PRO\\Views\\Appointment\\WriteRecord.cshtml",
@@ -335,19 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Program.cs",
-              "RelativeDocumentMoniker": "Clinic PRO\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Program.cs",
-              "RelativeToolTip": "Clinic PRO\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T19:02:00.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 31,
               "Title": "WriteMedicalRecordDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\WriteMedicalRecordDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\WriteMedicalRecordDto.cs",
@@ -359,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 32,
               "Title": "PrescriptionItemInputDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\PrescriptionItemInputDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\PrescriptionItemInputDto.cs",
@@ -371,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 33,
               "Title": "MedicineSearchResultDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\MedicineSearchResultDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\MedicineSearchResultDto.cs",
@@ -383,19 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Clinic PRO\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Clinic PRO\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-22T16:47:24.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 34,
               "Title": "BookAppointmentDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\BookAppointmentDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\BookAppointmentDto.cs",
@@ -407,19 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AppointmentService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\AppointmentService.cs",
-              "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Services\\AppointmentService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\AppointmentService.cs",
-              "RelativeToolTip": "ClinicPRO.Infrastructure\\Services\\AppointmentService.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAIwHkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T16:53:39.808Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 35,
               "Title": "DoctorAppointmentDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\DoctorAppointmentDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\DoctorAppointmentDto.cs",
@@ -431,19 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IAppointmentService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\IAppointmentService.cs",
-              "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\IAppointmentService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\IAppointmentService.cs",
-              "RelativeToolTip": "ClinicPRO.Application\\Interfaces\\IAppointmentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T16:51:27.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 36,
               "Title": "PatientAppointmentDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\PatientAppointmentDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\PatientAppointmentDto.cs",
@@ -455,7 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 37,
               "Title": "ChooseSlot.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\ChooseSlot.cshtml",
               "RelativeDocumentMoniker": "Clinic PRO\\Views\\Appointment\\ChooseSlot.cshtml",
@@ -467,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 38,
               "Title": "ChooseDoctor.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Appointment\\ChooseDoctor.cshtml",
               "RelativeDocumentMoniker": "Clinic PRO\\Views\\Appointment\\ChooseDoctor.cshtml",
@@ -479,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 40,
               "Title": "AvailableSlotDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\AvailableSlotDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\AvailableSlotDto.cs",
@@ -491,7 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 39,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Services\\AccountService.cs",
@@ -503,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 41,
               "Title": "DoctorListDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\DoctorListDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\DoctorListDto.cs",
@@ -515,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 45,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\RegisterDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\RegisterDto.cs",
@@ -527,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 43,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Clinic PRO\\Views\\Account\\Register.cshtml",
@@ -539,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 44,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Clinic PRO\\Views\\Account\\Login.cshtml",
@@ -551,7 +818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 42,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\DTOs\\LoginDto.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\DTOs\\LoginDto.cs",
@@ -563,7 +830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 46,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\Clinic PRO\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Clinic PRO\\Controllers\\AccountController.cs",
@@ -575,7 +842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 47,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\IAccountService.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\IAccountService.cs",
@@ -587,7 +854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 48,
               "Title": "ClinicPRO.Application.csproj",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\ClinicPRO.Application.csproj",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\ClinicPRO.Application.csproj",
@@ -599,7 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 49,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Repositories\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Repositories\\UnitOfWork.cs",
@@ -611,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 50,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Application\\Interfaces\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Application\\Interfaces\\IUnitOfWork.cs",
@@ -623,7 +890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 51,
               "Title": "20260915104435_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Clinic PRO\\ClinicPRO.Infrastructure\\Migrations\\20260915104435_InitialCreate.cs",
               "RelativeDocumentMoniker": "ClinicPRO.Infrastructure\\Migrations\\20260915104435_InitialCreate.cs",
@@ -632,18 +899,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-15T10:44:36.16Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:28:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

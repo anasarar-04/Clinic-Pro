@@ -6,6 +6,7 @@ namespace ClinicPRO.Application.Interfaces.Repositories
     {
         Task<AvailableSlot?> GetByIdAsync(int slotId);
         Task<List<AvailableSlot>> GetAvailableByDoctorIdAsync(int doctorId);
+        Task<List<AvailableSlot>> GetAllByDoctorIdAsync(int doctorId);
         Task AddAsync(AvailableSlot slot);
         void Update(AvailableSlot slot);
         void Delete(AvailableSlot slot);

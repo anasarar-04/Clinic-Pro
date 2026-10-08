@@ -1,0 +1,26 @@
+﻿@model List<ClinicPRO.Application.DTOs.NotificationDto>
+
+@{
+    ViewData["Title"] = "الإشعارات";
+}
+
+<h3 class="mb-4">الإشعارات</h3>
+
+@if (!Model.Any())
+{
+    <p class="text-muted">لا يوجد لديك إشعارات حاليا.</p>
+}
+else
+{
+    <div class="list-group">
+        @foreach (var n in Model.OrderByDescending(x => x.ScheduledAt))
+        {
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <span>@n.Message</span>
+                    <small class="text-muted">@n.ScheduledAt.ToString("yyyy-MM-dd HH:mm")</small>
+                </div>
+            </div>
+        }
+    </div>
+}

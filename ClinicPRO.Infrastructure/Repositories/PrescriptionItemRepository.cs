@@ -43,5 +43,18 @@ namespace ClinicPRO.Infrastructure.Repositories
         {
             _context.PrescriptionItems.Remove(item);
         }
+        public async Task<List<PrescriptionItem>> GetActiveItemsAsync(DateTime today)
+        {
+            return await _context.PrescriptionItems
+                .Include(i => i.Medicine)
+                .Include(i => i.MedicationTimes)
+                .Include(i => i.Prescription)
+                    .ThenInclude(p => p.MedicalRecord)
+                        .ThenInclude(r => r.Patient)
+                            .ThenInclude(p => p.Account)
+                .Where(i => i.Prescription.IssueDate.Date <= today.Date
+                         && i.Prescription.IssueDate.Date.AddDays(i.DurationDays) >= today.Date)
+                .ToListAsync();
+        }
     }
 }

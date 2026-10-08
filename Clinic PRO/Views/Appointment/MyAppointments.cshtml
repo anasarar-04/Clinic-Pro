@@ -56,6 +56,16 @@ else
                             </a>
                         }
                     </td>
+                    <td>
+                        @if (appt.Status == ClinicPRO.Domain.Enums.AppointmentStatus.Pending ||
+                                        appt.Status == ClinicPRO.Domain.Enums.AppointmentStatus.Confirmed)
+                        {
+                            <form asp-action="CancelAppointment" method="post" onsubmit="return confirm('هل أنت متأكد من إلغاء هذا الموعد؟');">
+                                <input type="hidden" name="appointmentId" value="@appt.AppointmentId" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger">إلغاء</button>
+                            </form>
+                        }
+                    </td>
                     <th></th>
                 </tr>
             }

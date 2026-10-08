@@ -1,0 +1,92 @@
+﻿@model List<ClinicPRO.Application.DTOs.DoctorSlotDto>
+
+@{
+    ViewData["Title"] = "إدارة الأوقات المتاحة";
+    var doctorId = ViewBag.DoctorId;
+}
+
+<h3 class="mb-4">إدارة الأوقات المتاحة</h3>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h5 class="card-title">إضافة وقت جديد</h5>
+        <form asp-action="AddSlot" method="post" class="row g-3">
+            <input type="hidden" name="DoctorId" value="@doctorId" />
+
+            <div class="col-md-4">
+                <label class="form-label">التاريخ</label>
+                <input type="date" name="SlotDate" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">من الساعة</label>
+                <input type="time" name="StartTime" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">إلى الساعة</label>
+                <input type="time" name="EndTime" class="form-control" required />
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary w-100">إضافة</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<h5 class="mb-3">أوقاتي الحالية</h5>
+
+@if (!Model.Any())
+{
+    <p class="text-muted">لا يوجد أوقات مضافة حتى الآن.</p>
+}
+else
+{
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>التاريخ</th>
+                <th>من</th>
+                <th>إلى</th>
+                <th>الحالة</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var slot in Model)
+            {
+                <tr>
+                    <td>@slot.SlotDate.ToString("yyyy-MM-dd")</td>
+                    <td>@slot.StartTime.ToString(@"hh\:mm")</td>
+                    <td>@slot.EndTime.ToString(@"hh\:mm")</td>
+                    <td>
+                        @if (slot.IsBooked)
+                        {
+                            <span class="badge bg-success">محجوز</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">متاح</span>
+                        }
+                    </td>
+                    <th></th>
+                    <td>
+                        @if (!slot.IsBooked)
+                        {
+                            <form asp-action="DeleteSlot" method="post" onsubmit="return confirm('هل أنت متأكد من حذف هذا الموعد؟');">
+                                <input type="hidden" name="slotId" value="@slot.SlotId" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger">حذف</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

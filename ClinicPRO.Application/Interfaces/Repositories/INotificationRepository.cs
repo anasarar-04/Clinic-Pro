@@ -6,6 +6,8 @@ namespace ClinicPRO.Application.Interfaces.Repositories
     {
         Task<List<Notification>> GetByAccountIdAsync(int accountId);
         Task<List<Notification>> GetPendingAsync(DateTime upToDateTime);
+        Task<bool> ExistsAppointmentReminderAsync(int appointmentId);
+        Task<bool> ExistsMedicationReminderForTodayAsync(int itemId, DateTime date);
         Task AddAsync(Notification notification);
         void Update(Notification notification);
     }
