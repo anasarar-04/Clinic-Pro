@@ -19,8 +19,12 @@ namespace Clinic_PRO.Controllers
         // ---------- Register ----------
 
         [HttpGet]
+        [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
         public async Task<IActionResult> Register()
         {
+            if (HttpContext.Session.GetInt32("AccountId") != null)
+                return RedirectToAction("Index", "Dashboard");
+
             ViewBag.Specializations = await _specializationRepository.GetAllAsync();
             return View(new RegisterDto());
         }
@@ -50,8 +54,12 @@ namespace Clinic_PRO.Controllers
         // ---------- Login ----------
 
         [HttpGet]
+        [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
         public IActionResult Login()
         {
+            if (HttpContext.Session.GetInt32("AccountId") != null)
+                return RedirectToAction("Index", "Dashboard");
+
             return View(new LoginDto());
         }
 
@@ -73,7 +81,7 @@ namespace Clinic_PRO.Controllers
             HttpContext.Session.SetInt32("AccountId", result.AccountId);
             HttpContext.Session.SetString("Role", result.Role);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Dashboard");
         }
 
         // ---------- Logout ----------

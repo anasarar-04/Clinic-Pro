@@ -1,8 +1,137 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "الرئيسية";
+    var isLoggedIn = Context.Session.GetInt32("AccountId") != null;
+    var role = Context.Session.GetString("Role");
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+
+    <div class="hero-content row align-items-center g-4">
+        <div class="col-lg-7">
+            <span class="hero-badge"><i class="bi bi-heart-pulse-fill"></i>عيادتك الرقمية</span>
+            <h1 class="mt-3 mb-3">رعايتك الصحية<br />بنقرة واحدة</h1>
+            <p class="mb-4">
+                احجز موعدك مع أفضل الأطباء، تابع سجلك الطبي ووصفاتك، واحصل على تذكيرات بالدواء وبالمواعيد بدون ما تنسى أي شي.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3">
+                @if (!isLoggedIn)
+                {
+                    <a class="btn btn-hero" asp-controller="Account" asp-action="Register"><i class="bi bi-person-plus"></i> أنشئ حسابك مجانا</a>
+                    <a class="btn btn-hero-outline" asp-controller="Account" asp-action="Login">تسجيل الدخول</a>
+                }
+                else if (role == "Patient")
+                {
+                    <a class="btn btn-hero" asp-controller="Appointment" asp-action="ChooseDoctor"><i class="bi bi-calendar-plus"></i> احجز موعد الآن</a>
+                    <a class="btn btn-hero-outline" asp-controller="Appointment" asp-action="MyAppointments">مواعيدي</a>
+                }
+                else
+                {
+                    <a class="btn btn-hero" asp-controller="Appointment" asp-action="DoctorAppointments"><i class="bi bi-journal-medical"></i> مواعيد اليوم</a>
+                    <a class="btn btn-hero-outline" asp-controller="Appointment" asp-action="MySlots">إدارة الأوقات</a>
+                }
+            </div>
+        </div>
+
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+            <div class="glass-card">
+                <div class="glass-row">
+                    <div class="glass-icon"><i class="bi bi-calendar2-heart"></i></div>
+                    <div class="flex-grow-1">
+                        <div class="fw-bold">موعدك القادم</div>
+                        <div class="glass-line" style="width:70%"></div>
+                        <div class="glass-line" style="width:45%"></div>
+                    </div>
+                </div>
+                <hr style="border-color:rgba(255,255,255,.3)" />
+                <div class="glass-row">
+                    <div class="glass-icon"><i class="bi bi-bell"></i></div>
+                    <div class="flex-grow-1">
+                        <div class="fw-bold">تذكير تلقائي</div>
+                        <div class="glass-line" style="width:60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <svg class="ecg" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 70 H380 L410 70 L435 25 L470 105 L500 45 L525 70 H760 L790 70 L815 25 L850 105 L880 45 L905 70 H1200"
+              fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+</section>
+
+<section class="mt-5">
+    <div class="text-center mb-4 reveal">
+        <h2 class="section-title">كل شي تحتاجه بمكان واحد</h2>
+        <p class="section-sub">أدوات بسيطة تخلي رحلتك العلاجية أسهل وأوضح</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+            <div class="card feature-card h-100 text-center p-4">
+                <div class="feature-icon mx-auto mb-3"><i class="bi bi-calendar2-check"></i></div>
+                <h5>حجز مواعيد سهل</h5>
+                <p class="text-muted mb-0">اختار الدكتور والوقت المناسب واحجز بثواني.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.1s">
+            <div class="card feature-card h-100 text-center p-4">
+                <div class="feature-icon mx-auto mb-3"><i class="bi bi-file-earmark-medical"></i></div>
+                <h5>وصفات طبية رقمية</h5>
+                <p class="text-muted mb-0">شوف وصفاتك وتقارير الدكتور وقت ما بدك.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.2s">
+            <div class="card feature-card h-100 text-center p-4">
+                <div class="feature-icon mx-auto mb-3"><i class="bi bi-capsule"></i></div>
+                <h5>تذكير بالدواء</h5>
+                <p class="text-muted mb-0">إشعار بوقت كل جرعة حسب وصفة الدكتور.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.3s">
+            <div class="card feature-card h-100 text-center p-4">
+                <div class="feature-icon mx-auto mb-3"><i class="bi bi-bell"></i></div>
+                <h5>تذكير بالموعد</h5>
+                <p class="text-muted mb-0">تنبيه قبل موعدك بيوم عشان ما تفوتك زيارة.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mt-5 reveal">
+    <div class="card p-4 p-lg-5">
+        <h2 class="section-title text-center mb-4">كيف يشتغل؟</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="step-num">1</div>
+                <h5>أنشئ حسابك</h5>
+                <p class="text-muted mb-0">بالرقم الوطني ورقم الهاتف، بدقيقة وحدة.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="step-num">2</div>
+                <h5>اختار طبيبك وموعدك</h5>
+                <p class="text-muted mb-0">تصفح الأطباء حسب التخصص واحجز الوقت الفاضي.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="step-num">3</div>
+                <h5>تابع وصفتك وتذكيراتك</h5>
+                <p class="text-muted mb-0">كل شي بيوصلك إشعار فيه بدون ما تتذكر.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+@if (!isLoggedIn)
+{
+    <section class="mt-5 reveal">
+        <div class="cta-band">
+            <h2 class="fw-bold mb-2">جاهز تبدأ؟</h2>
+            <p class="mb-4" style="opacity:.9">انضم هلأ وخلي صحتك أولوية.</p>
+            <a class="btn btn-hero" asp-controller="Account" asp-action="Register">أنشئ حسابك الآن</a>
+        </div>
+    </section>
+}

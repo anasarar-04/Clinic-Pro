@@ -82,7 +82,7 @@ namespace Clinic_PRO.Controllers
             if (!result.Success)
                 return RedirectToAction("ChooseSlot", new { doctorId });
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("MyAppointments");
         }
         public async Task<IActionResult> MyAppointments()
         {

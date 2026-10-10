@@ -1,0 +1,202 @@
+﻿@model PatientDashboardViewModel
+
+@{
+    ViewData["Title"] = "لوحة التحكم";
+}
+
+@functions {
+    string StatusText(ClinicPRO.Domain.Enums.AppointmentStatus s) => s switch
+    {
+        ClinicPRO.Domain.Enums.AppointmentStatus.Confirmed => "مؤكد",
+        ClinicPRO.Domain.Enums.AppointmentStatus.Completed => "مكتمل",
+        ClinicPRO.Domain.Enums.AppointmentStatus.Cancelled => "ملغى",
+        _ => "قيد الانتظار"
+    };
+
+    string StatusClass(ClinicPRO.Domain.Enums.AppointmentStatus s) => s switch
+    {
+        ClinicPRO.Domain.Enums.AppointmentStatus.Confirmed => "badge bg-success",
+        ClinicPRO.Domain.Enums.AppointmentStatus.Completed => "badge bg-secondary",
+        ClinicPRO.Domain.Enums.AppointmentStatus.Cancelled => "badge bg-danger",
+        _ => "badge bg-warning text-dark"
+    };
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<section class="dash-welcome mb-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+            <h2>أهلا، @Model.FullName</h2>
+            <p>هاي لوحة التحكم الخاصة فيك، منها بتوصل لمواعيدك وإشعاراتك بسرعة.</p>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-hero" asp-controller="Appointment" asp-action="ChooseDoctor"><i class="bi bi-calendar-plus"></i> احجز موعد جديد</a>
+            <a class="btn btn-hero-outline" asp-controller="Appointment" asp-action="MyAppointments">مواعيدي</a>
+        </div>
+    </div>
+</section>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-4">
+        <div class="card stat-card h-100">
+            <div class="stat-icon"><i class="bi bi-calendar2-week"></i></div>
+            <div>
+                <div class="stat-value">@Model.UpcomingCount</div>
+                <div class="stat-label">مواعيد قادمة</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card stat-card h-100">
+            <div class="stat-icon green"><i class="bi bi-check2-circle"></i></div>
+            <div>
+                <div class="stat-value">@Model.CompletedCount</div>
+                <div class="stat-label">زيارات مكتملة</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card stat-card h-100">
+            <div class="stat-icon amber"><i class="bi bi-bell"></i></div>
+            <div>
+                <div class="stat-value">@Model.NotificationsCount</div>
+                <div class="stat-label">الإشعارات</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-7">
+        <div class="card mb-4 @(Model.NextAppointment != null ? "next-appt" : "")">
+            <div class="card-body">
+                <h5 class="mb-3"><i class="bi bi-alarm"></i> موعدك القادم</h5>
+
+                @if (Model.NextAppointment != null)
+                {
+                    var next = Model.NextAppointment;
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <div>
+                            <div class="when">
+                                @(next.SlotDate?.ToString("yyyy-MM-dd") ?? "-") &nbsp;|&nbsp; @(next.StartTime?.ToString(@"hh\:mm") ?? "-")
+                            </div>
+                            <div class="mt-1">د. @next.DoctorName <span class="text-muted">(@next.SpecializationName)</span></div>
+                        </div>
+                        <span class="@StatusClass(next.Status)">@StatusText(next.Status)</span>
+                    </div>
+                }
+                else
+                {
+                    <div class="empty-state">
+                        <i class="bi bi-calendar-x"></i>
+                        <p class="mb-3">ما عندك مواعيد قادمة حاليا.</p>
+                        <a asp-controller="Appointment" asp-action="ChooseDoctor" class="btn btn-primary btn-sm">احجز موعد الآن</a>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="mb-0"><i class="bi bi-clock-history"></i> آخر مواعيدي</h5>
+                    <a asp-controller="Appointment" asp-action="MyAppointments" class="btn btn-sm btn-outline-primary">عرض الكل</a>
+                </div>
+
+                @if (!Model.RecentAppointments.Any())
+                {
+                    <div class="empty-state">
+                        <i class="bi bi-inbox"></i>
+                        <p class="mb-0">لا يوجد مواعيد بعد.</p>
+                    </div>
+                }
+                else
+                {
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>الدكتور</th>
+                                    <th>التاريخ</th>
+                                    <th>الوقت</th>
+                                    <th>الحالة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var appt in Model.RecentAppointments)
+                                {
+                                    <tr>
+                                        <td>د. @appt.DoctorName</td>
+                                        <td>@(appt.SlotDate?.ToString("yyyy-MM-dd") ?? "-")</td>
+                                        <td>@(appt.StartTime?.ToString(@"hh\:mm") ?? "-")</td>
+                                        <td><span class="@StatusClass(appt.Status)">@StatusText(appt.Status)</span></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-5">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="mb-3"><i class="bi bi-lightning-charge"></i> إجراءات سريعة</h5>
+                <div class="d-grid gap-2">
+                    <a class="quick-tile" asp-controller="Appointment" asp-action="ChooseDoctor">
+                        <span class="tile-icon"><i class="bi bi-calendar-plus"></i></span> حجز موعد جديد
+                    </a>
+                    <a class="quick-tile" asp-controller="Appointment" asp-action="MyAppointments">
+                        <span class="tile-icon"><i class="bi bi-calendar2-check"></i></span> مواعيدي وتفاصيل الزيارات
+                    </a>
+                    <a class="quick-tile" asp-controller="Notification" asp-action="Index">
+                        <span class="tile-icon"><i class="bi bi-bell"></i></span> الإشعارات
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="mb-0"><i class="bi bi-bell"></i> آخر الإشعارات</h5>
+                    <a asp-controller="Notification" asp-action="Index" class="btn btn-sm btn-outline-primary">الكل</a>
+                </div>
+
+                @if (!Model.LatestNotifications.Any())
+                {
+                    <div class="empty-state">
+                        <i class="bi bi-bell-slash"></i>
+                        <p class="mb-0">لا يوجد إشعارات حاليا.</p>
+                    </div>
+                }
+                else
+                {
+                    @foreach (var n in Model.LatestNotifications)
+                    {
+                        var isMed = n.NotifType == "MedicationReminder";
+                        <div class="notif-item">
+                            <span class="notif-dot @(isMed ? "med" : "")">
+                                <i class="bi @(isMed ? "bi-capsule" : "bi-calendar-event")"></i>
+                            </span>
+                            <div>
+                                <div>@n.Message</div>
+                                <small class="text-muted">@n.ScheduledAt.ToString("yyyy-MM-dd HH:mm")</small>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
