@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClinicPRO.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93fc7ffda57c81e26546c35b97adec348bed1b4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcc0197a4c68875fa1fea49855362ed956d5c786")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClinicPRO.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClinicPRO.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

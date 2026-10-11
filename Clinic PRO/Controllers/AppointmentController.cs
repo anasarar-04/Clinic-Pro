@@ -63,7 +63,6 @@ namespace Clinic_PRO.Controllers
             if (accountId == null)
                 return RedirectToAction("Login", "Account");
 
-            // نجيب PatientId المرتبط بالحساب الحالي
             var patient = await _patientRepository.GetByAccountIdAsync(accountId.Value);
             if (patient == null)
                 return RedirectToAction("Login", "Account");

@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Clinic_PRO.Controllers
 {
-    // no-store: يمنع المتصفح يعرض اللوحة من الكاش لما تعمل رجوع بعد تسجيل الخروج
     [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
     public class DashboardController : Controller
     {

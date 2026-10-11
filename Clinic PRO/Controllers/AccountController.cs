@@ -77,7 +77,6 @@ namespace Clinic_PRO.Controllers
                 return View(dto);
             }
 
-            // خزّن بيانات المستخدم بالـ Session
             HttpContext.Session.SetInt32("AccountId", result.AccountId);
             HttpContext.Session.SetString("Role", result.Role);
 
